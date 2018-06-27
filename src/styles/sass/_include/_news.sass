@@ -1,0 +1,245 @@
+.page-title
+	+fs(20rem)
+	text-transform: uppercase
+	font-weight: 700
+	margin-bottom: 30px
+	border-left: 3px solid $blue
+	padding-left: 10px
+
+.news-sidebar
+	margin-bottom: 30px
+	.post-list
+		border-top: 1px dashed darken($white,15%)
+	.post
+		border-bottom: 1px dashed darken($white,15%)
+		padding: 10px 0
+		&:hover
+			background: darken($white,3%)
+		figure 
+			+flexbox
+			.post-img
+				width: 70px
+				height: 70px
+				img 
+					width: 100%
+					height: 70px
+					object-fit: cover
+			figcaption
+				width: calc(100% - 70px)
+				padding-left: 10px
+				.post-name 
+					font-weight: 700
+					line-height: 1.4
+					+fs(14rem)
+					a 
+						color: $main
+						&:hover
+							color: $blue
+				time 
+					+fs(12rem)
+					font-weight: 600
+					color: darken($white,40%)
+.news-page
+	// margin-bottom: 30px
+	.btn-wrap
+		text-align: center
+		margin: -20px auto 30px
+		.btn-loadmore
+			display: inline-block
+			padding: 8px 20px
+			+bor-rad(5px)
+			color: $main
+			+fs(13rem)
+			font-weight: 600
+			text-transform: uppercase
+			border: 1px solid darken($white,10%)
+			&:hover
+				background: $blue
+				color: $white
+				border-color: $blue
+			&:after
+				content: '\f105'
+				margin-left: 5px
+	.news-col
+		margin-bottom: 30px
+		figure 
+			.news-img 
+				display: block
+				overflow: hidden
+				img 
+					width: 100%
+			figcaption
+				padding: 10px 0
+				.news-name
+					font-weight: 700
+					line-height: 1.4
+					margin-bottom: 5px
+					min-height: 42px
+					+fs(16rem)
+					a 
+						color: $main
+						&:hover
+							color: $blue
+				time 
+					display: block
+					+fs(12rem)
+					font-weight: 600
+					color: darken($white,40%)
+					margin-bottom: 10px
+				.news-des
+					+fs(13rem)
+					color: darken($white,60%)
+		&.big
+			margin: 0 0 30px
+			padding: 0
+			figure 
+				.news-img
+					+pos(rel,null)
+					border: 1px solid darken($white,10%)
+					time 
+						+pos(abs, null null 0 0)
+						background: $blue
+						color: $white
+						padding: 5px 10px
+						+fs(20rem)
+						.date
+							font-weight: 800
+							border-bottom: 1px solid color-rgba($white,0.5)
+							margin-bottom: 3px
+							padding: 0px 10px
+						.month
+							font-weight: 800
+							padding: 0px 10px
+				figcaption
+					padding: 10px 0
+					.news-name
+						+fs(20rem)
+						min-height: unset
+					time
+						margin-bottom: 5px
+					.news-des
+						+fs(14rem)
+		&.small
+			margin: 0
+			padding: 15px
+			background: darken($white,3%)
+			border-bottom: 1px darken($white,10%) solid
+			&:last-child
+				margin-bottom: 30px
+			figure 
+				+flexbox
+				.news-img
+					width: 120px
+					margin: 0
+				figcaption
+					width: calc(100% - 120px)
+					padding: 0 0 0 10px
+					.news-name
+						margin-bottom: 0px
+						min-height: unset
+						+fs(13rem)
+					time 
+						margin: 0 0
+					.news-des
+						display: none
+
+	.share 
+		border-top: 1px solid darken($white,10%)
+		padding-top: 10px
+	.news-info
+		margin-bottom: 30px
+		figure 
+			+pos(rel,null)
+			.news-img 
+				img 
+					width: 100%
+					filter: brightness(70%)
+			figcaption
+				+pos(abs, null 0 0 0)
+				background: color-rgba($black,0.5)
+				padding: 15px
+				.news-name
+					+fs(24rem)
+					text-transform: uppercase
+					color: $white
+					line-height: 1.5
+				time 
+					+bor-rad(3px)
+					display: inline-block
+					color: $main
+					font-weight: 700
+					background: $white
+					padding: 0px 5px
+					+fs(13rem)
+.our-tipsList
+	.item-ourtipsBig
+		margin-bottom: 30px
+		.row.flex.flex-wrap.no-gutters
+			.col-lg-4
+				padding: 30px
+				background: $blue
+		.content
+			h2
+				+fs(18rem)
+				margin-bottom: 15px
+				line-height: 1.4
+				a
+					color: #84b8ee
+				+media-breakpoint-up(lg)
+					+fs(22rem)
+			.brief
+				+fs(14rem)
+				font-weight: 400
+				line-height: 1.4
+				margin-bottom: 30px
+				color: $white
+			.btn-readmore
+				+fs(15rem)
+				color: $white
+				width: 160px
+				display: block
+				height: 45px
+				line-height: 45px
+				text-transform: uppercase
+				padding: 0 15px
+				text-align: center
+				border: 1px solid $white
+				+bor-rad(45px)
+				+transition(all 0.4s)
+				&:hover
+					background: $white
+					color: $blue
+.item-ourtipsWrap
+	margin-bottom: 30px
+.item-ourtips
+	figure
+		margin: 0
+		.news-img
+			display: block
+			margin-bottom: 15px
+		figcaption
+			time
+				+fs(13rem)
+				font-weight: 400
+				line-height: 1.4
+				margin-bottom: 10px
+				color: darken($white, 40%)
+				display: block
+			.news-name
+				+fs(20rem)
+				font-weight: 600
+				line-height: 1.4
+				margin-bottom: 10px
+				a
+					color: $main
+					+transition(all 0.4s)
+					&:hover
+						color: $blue
+			.news-des
+				+fs(14rem)
+				font-weight: 400
+				line-height: 1.4
+				color: darken($white, 40%)
+.our-tipsDetail
+	p
+		margin-bottom: 15px

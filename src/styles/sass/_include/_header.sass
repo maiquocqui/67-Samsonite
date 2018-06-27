@@ -1,0 +1,430 @@
+body
+	// padding-top: 140px
+	+media-breakpoint-down(lg)
+		// padding-top: 80px
+	+media-breakpoint-down(md)
+		// padding-bottom: 40px
+header
+	// +pos(fix, 0 0 null 0)
+	z-index: 1000
+	background: $white
+	+transition(all,0.5s)
+	// height: 140px
+	+media-breakpoint-down(lg)
+		height: 80px
+	&.minimal
+		box-shadow: 0 3px 10px color-rgba($black,0.1)
+		+media-breakpoint-up(xl)
+			.headermain
+				.sitelogo
+					padding: 10px 0
+					img 
+						height: 30px
+				.search
+					padding: 8px 0
+					.searchbox
+				.sitefeature
+					padding: 6px 0
+	.headertop
+	.hotline
+		float: left
+		a 
+			display: block
+			+fs(18rem)
+			line-height: 30px
+			color: $yellow
+			font-weight: 700
+			+media-breakpoint-down(xs)
+				+fs(14rem)
+			&:before
+				content: '\f095'
+				font-family: 'fontawesome'
+				margin-right: 5px
+				line-height: 1
+	.login
+		float: left
+		+media-breakpoint-down(sm)
+			float: none
+			padding: 5px 15px
+		ul 
+			li 
+				display: inline-block
+				vertical-align: top
+				+ li 
+					margin-left: 20px
+				a
+					display: block
+					+fs(13rem)
+					line-height: 30px
+					color: darken($white,60%)
+					+media-breakpoint-down(lg)
+						+fs(14rem)
+						color: $blue
+					&:hover
+						color: $red
+					&:before
+						content: ''
+						font-family: 'fontawesome'
+						margin-right: 5px
+						line-height: 1
+				&:first-child
+					a
+						&:before
+							content: '\f044'
+				&:last-child
+					a
+						&:before
+							content: '\f09c'
+	.language
+		float: left
+		margin-left: 30px
+		+pos(rel,null)
+		&:before
+			content: ''
+			display: block
+			width: 1px
+			height: 10px
+			+pos(abs, 10px null null -15px)
+			background: darken($white,40%)
+		.dropdown
+			.dropdown-toggle
+				display: block
+				+fs(13rem)
+				line-height: 30px
+				color: $main
+				+pos(rel,null)
+				padding-right: 5px
+				&:after
+					content: '\f107'
+					font-family: 'fontawesome'
+					border: none
+					+pos(abs, 0 0 null null)
+			.dropdown-menu
+				min-width: unset
+				left: unset
+				right: -10px
+				.dropdown-item
+					+fs(13rem)
+					line-height: 30px
+					padding: 0px 15px
+	.colright
+		float: right
+	.headermain
+		background: darken($white,4%)
+		.btn-showmenu
+			float: left
+			+fs(18rem)
+			width: 30px
+			height: 30px
+			text-align: center
+			line-height: 30px
+			background: $blue
+			color: $white
+			margin: 10px 0
+			margin-right: 10px
+		.overlay
+			+pos(fix, 0 null 0 0 )
+			right: 0
+			background: $black
+			opacity: 0.8
+			display: none
+			z-index: 900
+		.sitelogo
+			padding: 15px 0
+			float: left
+			+transition(all,0.3s)
+			+media-breakpoint-down(lg)
+			a 
+				display: block
+			img 
+				height: 40px
+				+transition(all,0.3s)
+				+media-breakpoint-down(lg)
+					height: 20px
+				+media-breakpoint-down(xs)
+					height: 10px
+		.search
+			float: left
+			padding: 18px 0
+			+transition(all,0.3s)
+			+media-breakpoint-down(lg)
+				padding: 8px 0
+			.searchbox
+				+flexbox
+				width: 340px
+				background: $white
+				border: 1px solid darken($white,10%)
+				+bor-rad(50px)
+				padding: 1px
+				+media-breakpoint-down(lg)
+					width: 300px
+				+media-breakpoint-down(sm)
+					width: 250px
+				+media-breakpoint-down(xs)
+					width: 130px
+				input
+					width: calc(100% - 30px)
+					line-height: 30px
+					background: none
+					border: none
+					+fs(14rem)
+					padding: 0px 20px
+				.searchbutton
+					width: 30px
+					height: 30px
+					line-height: 30px
+					text-align: center
+					+fs(14rem)
+					color: $white
+					background: $blue
+					+bor-rad(50px)
+		.sitefeature
+			float: left
+			margin-left: 30px
+			padding: 16px 0
+			+transition(all,0.3s)
+			.feature
+				float: left
+				+ .feature
+					margin-left: 20px
+				figure 
+					+flexbox
+					.icon
+						+flexbox
+						width: 36px
+						height: 36px
+						justify-content: center
+						align-items: center
+						img 
+							max-width: 100%
+							max-height: 100%
+					figcaption
+						width: 100px
+						margin-left: 10px
+						.des
+							+fs(13rem)
+							color: darken($white,40%)
+	.headermenu
+		.mainmenu-wrap
+			+pos(rel,null)
+		.menu
+			float: left
+			+media-breakpoint-down(lg)
+				+pos(fix, 0 null 0 0)
+				width: 280px
+				background: $white 
+				z-index: 1000
+				+transform(translateX(-100%))
+				+transition(all,0.5s)
+				&.open
+					+transform(translateX(0))
+			// +media-breakpoint-down(xs)
+			// 	width: calc(100% - 40px)
+			.sitelogo
+				text-align: center
+				padding: 30px 0
+				border-bottom: 3px solid $blue
+				img 
+					height: 30px
+			.btn-closemenu
+				+pos(abs, 10px 10px null null)
+				width: 30px
+				height: 30px
+				line-height: 30px
+				+fs(16rem)
+				text-align: center
+				color: $red
+				background: darken($white,3%)
+				+bor-rad(50px)
+				.lnr 
+					line-height: 1
+					&:before
+						line-height: 1
+			.menucontent
+			.menuwrap
+				ul.menulink
+					> li 
+						float: left
+						+media-breakpoint-down(lg)
+							float: none
+							border-bottom: 1px solid darken($white,5%)
+						> a 
+							display: block
+							+fs(15rem)
+							text-transform: uppercase
+							color: $main
+							padding: 9px 15px
+						.btn-showsub
+							+pos(abs, 0 0 null null)
+							width: 40px
+							height: 40px
+							line-height: 40px
+							text-align: center
+						&.hassub
+							+pos(rel,null)
+							.sub
+								+pos(abs, 100% null null 0)
+								z-index: 5
+								padding: 20px 0px
+								min-width: 200px
+								background: $white
+								border: 1px solid darken($white,10%)
+								box-shadow: 0 3px 10px color-rgba($black,0.1)
+								display: none
+								+media-breakpoint-down(lg)
+									+pos(static,unset)
+									box-shadow: none
+									min-width: unset
+								ul
+									// +flexbox
+									// flex-wrap: wrap
+									li
+										// width: 50%
+										padding: 0px 10px
+										+media-breakpoint-down(lg)
+											width: 100%
+										a
+											display: block
+											+fs(12rem)
+											text-transform: uppercase
+											color: $main
+											padding: 8px
+											white-space: nowrap
+											&:hover
+												color: $blue
+						&.hasmega
+							+media-breakpoint-down(lg)
+								+pos(rel,null)
+							.mega
+								+pos(abs, 100% 0 null 0)
+								z-index: 5
+								padding: 20px 0px
+								background: $white
+								+flexbox
+								flex-wrap: wrap
+								border: 1px solid darken($white,10%)
+								display: none
+								box-shadow: 0 3px 10px color-rgba($black,0.1)
+								+media-breakpoint-down(lg)
+									+pos(static,unset)
+									box-shadow: none
+								.megasub
+									width: 20%
+									border-right: 1px solid darken($white,10%)
+									padding: 0px 15px
+									padding-bottom: 10px
+									+media-breakpoint-down(lg)
+										width: 100%
+										border: none
+									&:nth-child(5), &:nth-child(10), &:nth-child(15)
+										border-right: none
+									.brand-logo
+										+flexbox
+										height: 50px
+										justify-content: center
+										align-items: center
+										border-bottom: 1px solid darken($white,10%)
+										img 
+											max-width: 80%
+											max-height: 80%
+										+ ul
+											li
+												&:first-child
+													margin-bottom: 5px
+									ul
+										padding: 5px
+										li
+											a
+												display: block
+												+fs(12rem)
+												text-transform: uppercase
+												color: $main
+												padding: 5px
+												&:hover
+													color: $blue
+											// &:first-child
+											// 	margin-bottom: 5px
+									.mega-banner
+										display: block
+										+pos(rel,null)
+										.label
+											+pos(abs, 10px null null 0px)
+											z-index: 5
+											+fs(12rem)
+											line-height: 20px
+											padding: 0px 10px
+											color: $white
+											&.bestsellers
+												background: $blue
+											&.newarrivals
+												background: $red
+										.img
+											+flexbox
+											height: 250px
+											justify-content: center
+											align-items: center
+											+pos(rel,null)
+											img
+												max-width: 80%
+												max-height: 80%
+						&.sale 
+							> a 
+								color: $red
+								&:before
+									content: '\f0e7'
+									margin-right: 5px
+						&.event
+							> a 
+								&:before
+									// content: '\f1ea'
+									// font-family: 'fontawesome'
+									// margin-right: 5px
+									// color: $blue
+						&:hover
+							+media-breakpoint-up(xl)
+								> a 
+									color: $white
+									background: $blue
+									&:before
+										color: $white
+								> .sub
+									display: block
+								> .mega
+									+flexbox
+						&.active
+							> a 
+								color: $blue
+								font-weight: 600
+								&:hover
+									color: $white
+
+	.cart
+		float: right
+		+media-breakpoint-down(lg)
+			padding: 5px 0
+			margin-left: 20px
+		+media-breakpoint-down(md)
+			margin-left: 15px
+		+media-breakpoint-down(sm)
+			margin-left: 5px
+		.carttoggle
+			color: darken($white,60%)
+			+fs(24rem)
+			+pos(rel,null)
+			margin: 5px 0
+			cursor: pointer
+			&:hover
+				color: $blue
+			.lnr
+				display: block
+				line-height: 30px
+				width: 30px
+				text-align: center
+			.cartamount
+				+pos(abs, -3px -3px null null)
+				background: $red
+				color: $white
+				+fs(12rem)
+				line-height: 1
+				padding: 2px 4px
+				+bor-rad(50px)

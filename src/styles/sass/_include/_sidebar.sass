@@ -1,0 +1,44 @@
+
+.sidebar-category
+	margin-bottom: 30px
+	ul 
+		+pos(rel,null)
+		&:before
+			content: ''
+			display: block
+			width: 1px
+			+pos(abs, 0 null 0 0)
+			background: darken($white,10%)
+		li 
+			+pos(rel,null)
+			&:before
+				content: ''
+				width: 2px
+				+pos(abs, 0 null 100% 0)
+				+transition(all,0.5s)
+				background: $main
+			a 
+				display: block
+				+fs(13rem)
+				padding: 7px 15px
+				font-weight: 700
+				text-transform: uppercase
+				color: darken($white,40%)
+				&:before
+			&:hover
+				&:before
+					bottom: 0
+				a
+					color: $main
+			&.active
+				&:before
+					bottom: 0
+				a 
+					color: $blue
+
+.sidebar-banner
+	a
+		display: block
+		margin-bottom: 30px
+		img 
+			width: 100%

@@ -1,0 +1,528 @@
+.container
+	section.breadcrumb-banner.clearfix
+		.img 
+			img(src="img/breadcrumb/1.jpg", alt="")
+		h3.pagename
+		ol.breadcrumb(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books')
+					span(itemprop='name') Trang chủ
+				meta(itemprop='position', content='1')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') Tin tức
+				meta(itemprop='position', content='2')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') Tin thị trường
+				meta(itemprop='position', content='3')
+			//- li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') American Tourister Handy Spinner 78cm TSA
+				meta(itemprop='position', content='4')
+
+	.row.flex.flex-wrap.clearfix
+		.col-12.col-lg-9.wow.fadeInLeft
+			section.news-page.clearfix
+				.news-group.clearfix
+					h1.page-title Tin nổi bật
+					.news-list.clearfix
+						.row.flex.flex-wrap
+							.col-12.col-md-7
+								article.news-col.big
+									figure
+										a.news-img(href="#")
+											img(src="img/news/t1.jpg", alt="")
+											time 
+												.date 07
+												.month 07
+										figcaption
+											h3.news-name
+												a(href="#") Samsonite ưu đãi mừng năm mới
+											//- time 19/05/2017
+											.news-des Tháng 1, hòa cùng không khí sôi động đón chào năm mới, tại tất cả cửa hàng của Samsonite & American Tourister đang diễn ra chương trình hấp dẫn.
+							.col-12.col-md-5
+								article.news-col.small
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t2.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") Giảm giá đến 50% khi sắm vali ngày 'Black Friday'
+											time 19/05/2017
+											.news-des Đây là cơ hội tốt để độc giả có thể sở hữu những sản phẩm như vali, ba lô, túi xách từ thương hiệu Samsonite, American Tourister, High Sierra, Kamiliant với giá ưu đãi.
+											//- a.link(href="#") Xem chi tiết
+								article.news-col.small
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t3.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") 15 năm chính thức có mặt ở Việt Nam, Samsonite giảm giá 50%
+											time 19/05/2017
+											.news-des Chiến dịch giảm 30-50% tất cả sản phẩm của thương hiệu Mỹ - Samsonite là lời tri ân của công ty gửi đến khách hàng sau 15 năm gắn bó cùng phát triển.
+											//- a.link(href="#") Xem chi tiết
+								article.news-col.small
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t4.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") Nhận ưu đãi lớn khi mua vali Samsonite
+											time 19/05/2017
+											.news-des Cơn lốc khuyến mãi lên đến 50% tất cả sản phẩm Samsonite và American Tourister thương hiệu Mỹ và bảo hành quốc tế đến 10 năm.
+											//- a.link(href="#") Xem chi tiết
+								article.news-col.small
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t5.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") Giảm giá đến 50% khi sắm vali ngày 'Black Friday'
+											time 19/05/2017
+											.news-des Đây là cơ hội tốt để độc giả có thể sở hữu những sản phẩm như vali, ba lô, túi xách từ thương hiệu Samsonite, American Tourister, High Sierra, Kamiliant với giá ưu đãi.
+											//- a.link(href="#") Xem chi tiết
+				.news-group.clearfix
+					h1.page-title Tin thị trường
+					.news-list.clearfix
+						.row.flex.flex-wrap
+							.col-12.col-sm-6.col-md-4
+								article.news-col
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t5.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") 500 triệu món hàng hiệu giảm giá 50% tại ‘VStyle’s private sale’
+											time 19/05/2017
+											.news-des Hơn 300 thương hiệu thời trang, mỹ phẩm nổi tiếng cùng 500 triệu sản phẩm khác nhau sẽ cùng góp mặt trong sự kiện khuyến mãi “VStyle’s private sale” với mức giảm lên đến 50%.
+											//- a.link(href="#") Xem chi tiết
+							.col-12.col-sm-6.col-md-4
+								article.news-col
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t6.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") Khai trương Vincom đầu tiên tại Hà Tĩnh
+											time 19/05/2017
+											.news-des Ngày 12/7, Vincom Plaza Hà Tĩnh chính thức được khai trương. Với kiến trúc sang trọng và gian hàng phong phú, nơi đây hứa hẹn là điểm tham quan mua sắm hấp dẫn ở Bắc Trung Bộ.
+											//- a.link(href="#") Xem chi tiết
+							.col-12.col-sm-6.col-md-4
+								article.news-col
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t7.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") 9 chiếc vali sáng tạo trợ giúp đắc lực cho chuyến du lịch
+											time 19/05/2017
+											.news-des Những năm qua, vali đã nâng cấp đầy ấn tượng, từ bánh xe 360 độ đến chất liệu. Giờ đây với thiết kế thông minh, các thương hiệu mang lại sự tiện lợi ở mức độ hoàn toàn mới.
+											//- a.link(href="#") Xem chi tiết
+							.col-12.col-sm-6.col-md-4
+								article.news-col
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t8.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") Hè tưng bừng với ngày hội du lịch Khám phá thế giới tại Crescent Mall
+											time 19/05/2017
+											.news-des Cùng sẵn sàng cho chuyến du lịch hè với những ưu đãi và quà tặng bất ngờ trong ngày hội du lịch Khám phá thế giới tại Crescent Mall.
+											//- a.link(href="#") Xem chi tiết
+							.col-12.col-sm-6.col-md-4
+								article.news-col
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t9.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") Giới trẻ háo hức tham dự chợ phiên du lịch
+											time 19/05/2017
+											.news-des Hàng loạt chương trình giải trí, mua sắm hấp dẫn và hướng dẫn tái chế vật dụng trở thành “thỏi nam châm” hút giới trẻ Sài thành đến với chợ phiên du lịch tổ chức tại SC VivoCity.
+											//- a.link(href="#") Xem chi tiết
+							.col-12.col-sm-6.col-md-4
+								article.news-col
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t9.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") Giới trẻ háo hức tham dự chợ phiên du lịch
+											time 19/05/2017
+											.news-des Hàng loạt chương trình giải trí, mua sắm hấp dẫn và hướng dẫn tái chế vật dụng trở thành “thỏi nam châm” hút giới trẻ Sài thành đến với chợ phiên du lịch tổ chức tại SC VivoCity.
+											//- a.link(href="#") Xem chi tiết
+					.btn-wrap
+						a.btn-loadmore(href="#") Xem thêm
+				.news-group.clearfix
+					h1.page-title Tin khuyến mãi
+					.news-list.clearfix
+						.row.flex.flex-wrap
+							.col-12.col-sm-6.col-md-4
+								article.news-col
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t5.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") 500 triệu món hàng hiệu giảm giá 50% tại ‘VStyle’s private sale’
+											time 19/05/2017
+											.news-des Hơn 300 thương hiệu thời trang, mỹ phẩm nổi tiếng cùng 500 triệu sản phẩm khác nhau sẽ cùng góp mặt trong sự kiện khuyến mãi “VStyle’s private sale” với mức giảm lên đến 50%.
+											//- a.link(href="#") Xem chi tiết
+							.col-12.col-sm-6.col-md-4
+								article.news-col
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t6.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") Khai trương Vincom đầu tiên tại Hà Tĩnh
+											time 19/05/2017
+											.news-des Ngày 12/7, Vincom Plaza Hà Tĩnh chính thức được khai trương. Với kiến trúc sang trọng và gian hàng phong phú, nơi đây hứa hẹn là điểm tham quan mua sắm hấp dẫn ở Bắc Trung Bộ.
+											//- a.link(href="#") Xem chi tiết
+							.col-12.col-sm-6.col-md-4
+								article.news-col
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t7.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") 9 chiếc vali sáng tạo trợ giúp đắc lực cho chuyến du lịch
+											time 19/05/2017
+											.news-des Những năm qua, vali đã nâng cấp đầy ấn tượng, từ bánh xe 360 độ đến chất liệu. Giờ đây với thiết kế thông minh, các thương hiệu mang lại sự tiện lợi ở mức độ hoàn toàn mới.
+											//- a.link(href="#") Xem chi tiết
+							.col-12.col-sm-6.col-md-4
+								article.news-col
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t8.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") Hè tưng bừng với ngày hội du lịch Khám phá thế giới tại Crescent Mall
+											time 19/05/2017
+											.news-des Cùng sẵn sàng cho chuyến du lịch hè với những ưu đãi và quà tặng bất ngờ trong ngày hội du lịch Khám phá thế giới tại Crescent Mall.
+											//- a.link(href="#") Xem chi tiết
+							.col-12.col-sm-6.col-md-4
+								article.news-col
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t9.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") Giới trẻ háo hức tham dự chợ phiên du lịch
+											time 19/05/2017
+											.news-des Hàng loạt chương trình giải trí, mua sắm hấp dẫn và hướng dẫn tái chế vật dụng trở thành “thỏi nam châm” hút giới trẻ Sài thành đến với chợ phiên du lịch tổ chức tại SC VivoCity.
+											//- a.link(href="#") Xem chi tiết
+							.col-12.col-sm-6.col-md-4
+								article.news-col
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t9.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") Giới trẻ háo hức tham dự chợ phiên du lịch
+											time 19/05/2017
+											.news-des Hàng loạt chương trình giải trí, mua sắm hấp dẫn và hướng dẫn tái chế vật dụng trở thành “thỏi nam châm” hút giới trẻ Sài thành đến với chợ phiên du lịch tổ chức tại SC VivoCity.
+											//- a.link(href="#") Xem chi tiết
+					.btn-wrap
+						a.btn-loadmore(href="#") Xem thêm
+				//- .news-group.clearfix
+					h1.page-title Sự kiện
+					.news-list.clearfix
+						.row.flex.flex-wrap
+							.col-12.col-sm-6.col-md-4
+								article.news-col
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t5.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") 500 triệu món hàng hiệu giảm giá 50% tại ‘VStyle’s private sale’
+											time 19/05/2017
+											.news-des Hơn 300 thương hiệu thời trang, mỹ phẩm nổi tiếng cùng 500 triệu sản phẩm khác nhau sẽ cùng góp mặt trong sự kiện khuyến mãi “VStyle’s private sale” với mức giảm lên đến 50%.
+											//- a.link(href="#") Xem chi tiết
+							.col-12.col-sm-6.col-md-4
+								article.news-col
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t6.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") Khai trương Vincom đầu tiên tại Hà Tĩnh
+											time 19/05/2017
+											.news-des Ngày 12/7, Vincom Plaza Hà Tĩnh chính thức được khai trương. Với kiến trúc sang trọng và gian hàng phong phú, nơi đây hứa hẹn là điểm tham quan mua sắm hấp dẫn ở Bắc Trung Bộ.
+											//- a.link(href="#") Xem chi tiết
+							.col-12.col-sm-6.col-md-4
+								article.news-col
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t7.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") 9 chiếc vali sáng tạo trợ giúp đắc lực cho chuyến du lịch
+											time 19/05/2017
+											.news-des Những năm qua, vali đã nâng cấp đầy ấn tượng, từ bánh xe 360 độ đến chất liệu. Giờ đây với thiết kế thông minh, các thương hiệu mang lại sự tiện lợi ở mức độ hoàn toàn mới.
+											//- a.link(href="#") Xem chi tiết
+							.col-12.col-sm-6.col-md-4
+								article.news-col
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t8.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") Hè tưng bừng với ngày hội du lịch Khám phá thế giới tại Crescent Mall
+											time 19/05/2017
+											.news-des Cùng sẵn sàng cho chuyến du lịch hè với những ưu đãi và quà tặng bất ngờ trong ngày hội du lịch Khám phá thế giới tại Crescent Mall.
+											//- a.link(href="#") Xem chi tiết
+							.col-12.col-sm-6.col-md-4
+								article.news-col
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t9.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") Giới trẻ háo hức tham dự chợ phiên du lịch
+											time 19/05/2017
+											.news-des Hàng loạt chương trình giải trí, mua sắm hấp dẫn và hướng dẫn tái chế vật dụng trở thành “thỏi nam châm” hút giới trẻ Sài thành đến với chợ phiên du lịch tổ chức tại SC VivoCity.
+											//- a.link(href="#") Xem chi tiết
+							.col-12.col-sm-6.col-md-4
+								article.news-col
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t9.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") Giới trẻ háo hức tham dự chợ phiên du lịch
+											time 19/05/2017
+											.news-des Hàng loạt chương trình giải trí, mua sắm hấp dẫn và hướng dẫn tái chế vật dụng trở thành “thỏi nam châm” hút giới trẻ Sài thành đến với chợ phiên du lịch tổ chức tại SC VivoCity.
+											//- a.link(href="#") Xem chi tiết
+					.btn-wrap
+						a.btn-loadmore(href="#") Xem thêm
+				.news-group.clearfix
+					h1.page-title Kinh nghiệm du lịch
+					.news-list.clearfix
+						.row.flex.flex-wrap
+							.col-12.col-sm-6.col-md-4
+								article.news-col
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t5.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") 500 triệu món hàng hiệu giảm giá 50% tại ‘VStyle’s private sale’
+											time 19/05/2017
+											.news-des Hơn 300 thương hiệu thời trang, mỹ phẩm nổi tiếng cùng 500 triệu sản phẩm khác nhau sẽ cùng góp mặt trong sự kiện khuyến mãi “VStyle’s private sale” với mức giảm lên đến 50%.
+											//- a.link(href="#") Xem chi tiết
+							.col-12.col-sm-6.col-md-4
+								article.news-col
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t6.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") Khai trương Vincom đầu tiên tại Hà Tĩnh
+											time 19/05/2017
+											.news-des Ngày 12/7, Vincom Plaza Hà Tĩnh chính thức được khai trương. Với kiến trúc sang trọng và gian hàng phong phú, nơi đây hứa hẹn là điểm tham quan mua sắm hấp dẫn ở Bắc Trung Bộ.
+											//- a.link(href="#") Xem chi tiết
+							.col-12.col-sm-6.col-md-4
+								article.news-col
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t7.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") 9 chiếc vali sáng tạo trợ giúp đắc lực cho chuyến du lịch
+											time 19/05/2017
+											.news-des Những năm qua, vali đã nâng cấp đầy ấn tượng, từ bánh xe 360 độ đến chất liệu. Giờ đây với thiết kế thông minh, các thương hiệu mang lại sự tiện lợi ở mức độ hoàn toàn mới.
+											//- a.link(href="#") Xem chi tiết
+							.col-12.col-sm-6.col-md-4
+								article.news-col
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t8.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") Hè tưng bừng với ngày hội du lịch Khám phá thế giới tại Crescent Mall
+											time 19/05/2017
+											.news-des Cùng sẵn sàng cho chuyến du lịch hè với những ưu đãi và quà tặng bất ngờ trong ngày hội du lịch Khám phá thế giới tại Crescent Mall.
+											//- a.link(href="#") Xem chi tiết
+							.col-12.col-sm-6.col-md-4
+								article.news-col
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t9.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") Giới trẻ háo hức tham dự chợ phiên du lịch
+											time 19/05/2017
+											.news-des Hàng loạt chương trình giải trí, mua sắm hấp dẫn và hướng dẫn tái chế vật dụng trở thành “thỏi nam châm” hút giới trẻ Sài thành đến với chợ phiên du lịch tổ chức tại SC VivoCity.
+											//- a.link(href="#") Xem chi tiết
+							.col-12.col-sm-6.col-md-4
+								article.news-col
+									figure
+										
+										a.news-img(href="#")
+											img(src="img/news/t9.jpg", alt="")
+									
+										figcaption
+											h3.news-name
+												a(href="#") Giới trẻ háo hức tham dự chợ phiên du lịch
+											time 19/05/2017
+											.news-des Hàng loạt chương trình giải trí, mua sắm hấp dẫn và hướng dẫn tái chế vật dụng trở thành “thỏi nam châm” hút giới trẻ Sài thành đến với chợ phiên du lịch tổ chức tại SC VivoCity.
+											//- a.link(href="#") Xem chi tiết
+					.btn-wrap
+						a.btn-loadmore(href="#") Xem thêm
+				.video-list
+					h2.page-title Video
+					.row
+						.col-12.col-sm-6.col-md-4
+							.video-col
+								figure
+									a.video-img(href="https://www.youtube.com/watch?v=dRGT6JGcmlI" data-fancybox="video")
+										img(src="img/news/t7.jpg", alt="")
+									figcaption
+										h3.video-name
+											a(href="#") Samsonite RED SS17 TVC
+						.col-12.col-sm-6.col-md-4
+							.video-col
+								figure
+									a.video-img(href="https://www.youtube.com/watch?v=dRGT6JGcmlI" data-fancybox="video")
+										img(src="img/news/t8.jpg", alt="")
+									figcaption
+										h3.video-name
+											a(href="#") Samsonite
+						.col-12.col-sm-6.col-md-4
+							.video-col
+								figure
+									a.video-img(href="https://www.youtube.com/watch?v=dRGT6JGcmlI" data-fancybox="video")
+										img(src="img/news/t9.jpg", alt="")
+									figcaption
+										h3.video-name
+											a(href="#") Samsonite
+					.btn-wrap
+						a.btn-loadmore(href="#") Xem thêm
+			//- .pages
+				ul.pagination
+					li 
+						a(href="#") 1
+					li.active
+						a(href="#") 2
+					li 
+						a(href="#") 3
+					li 
+						a(href="#") 4
+		.col-12.col-lg-3.wow.fadeInRight
+			nav.sidebar-category.clearfix
+				ul 
+					li
+						a(href="#!") Tin thị trường
+					li 
+						a(href="#!") Tin khuyến mãi
+					li 
+						a(href="#!") Kinh nghiệm du lịch
+					li 
+						a(href="#!") Video
+			nav.sidebar-banner
+				a(href="#")
+					img(src="img/ads/ads1.jpg", alt="")
+				a(href="#")
+					img(src="img/ads/ads2.jpg", alt="")
+			.sidebar-video.clearfix
+				iframe(width="100%" height="300" src="https://www.youtube.com/embed/XWLXA4p-5Mc" frameborder="0" allowfullscreen)
+			//- .news-sidebar.clearfix
+				h3.small-title Tin nổi bật
+				.post-list
+					.post
+						figure 
+							a.post-img(href="#")
+								img(src="img/news/t10.jpg", alt="")
+							figcaption
+								h2.post-name
+									a(href="#") 100 thương hiệu tham gia 'Sale khủng đến nửa đêm' tại Crescent Mall
+								time 27/07/2017
+					.post
+						figure 
+							a.post-img(href="#")
+								img(src="img/news/t12.jpg", alt="")
+							figcaption
+								h2.post-name
+									a(href="#") MWC 2017: Nhiều công nghệ quan trọng được hiện thực hoá
+								time 27/07/2017
+					.post
+						figure 
+							a.post-img(href="#")
+								img(src="img/news/t11.jpg", alt="")
+							figcaption
+								h2.post-name
+									a(href="#") Global Bags & Luggage khuyến mãi đón Giáng sinh
+								time 27/07/2017
+					.post
+						figure 
+							a.post-img(href="#")
+								img(src="img/news/t13.jpg", alt="")
+							figcaption
+								h2.post-name
+									a(href="#") 3 lý do khiến SC VivoCity hút giới trẻ Sài thành dịp Noel
+								time 27/07/2017
+					.post
+						figure 
+							a.post-img(href="#")
+								img(src="img/news/t14.jpg", alt="")
+							figcaption
+								h2.post-name
+									a(href="#") Chương trình 'Khuyến mãi hồng' tại Crescent Mall
+								time 27/07/2017

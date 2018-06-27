@@ -1,0 +1,81 @@
+.page-content
+	margin-bottom: 30px
+.content-aboutWrap
+	margin-bottom: 30px
+.newsAttr
+	+pos(rel,null)
+	margin-bottom: 30px
+	+media-breakpoint-up(md)		
+		&:after
+			content: ''
+			+pos(abs, 0 null 0 50%)
+			+transform(translate(-50%,0))
+			width: 1px
+			background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAICAYAAAA4GpVBAAAAE0lEQVQYV2OYOXPmfwZsBAMKAAB8uQ3zVop0BQAAAABJRU5ErkJggg==') 0 0 repeat-y
+	.itemAttrWrap
+		+pos(rel,null)
+		display: block
+		margin-right: -15px
+		margin-left: -15px
+		+media-breakpoint-up(md)
+			margin-right: -30px
+			margin-left: -30px
+		&:after
+			content: ''
+			display: table
+			clear: both
+		.itemAttr
+			+pos(rel,null)
+			float: left
+			width: 100%
+			padding-right: 15px
+			padding-left: 15px
+			margin-bottom: 30px
+			+media-breakpoint-up(md)
+				width: 50%
+				padding-right: 30px
+				padding-left: 30px
+			.title
+				+fs(16rem)
+				font-weight: 800
+				margin-bottom: 15px
+			.desc
+				+fs(16rem)
+				font-weight: 400
+				line-height: 1.4
+			.contentAttr
+				background: #ebebeb
+				padding: 25px 30px
+				+pos(rel,null)
+				+media-breakpoint-up(md)
+					&:before
+						content: ''
+						background: $blue
+						height: 3px
+						+pos(abs, 50% null null 100%)
+						width: 30px
+						+transform(translate(0,-50%))
+						z-index: 0
+					&:after
+						content: ''
+						width: 15px
+						height: 15px
+						background: $white
+						border: 3px solid $blue
+						+bor-rad(50%)
+						+transform(translate(0,-50%))
+						+pos(abs, 50% -36.5px null null)
+						z-index: 1
+			&.even
+				float: right
+				+media-breakpoint-up(md)
+					margin-top: 90px
+					margin-bottom: 0
+				.contentAttr
+					+media-breakpoint-up(md)
+						&:before
+							+pos(abs, 50% 100% null null)
+							left: inherit
+						&:after
+							+pos(abs, 50% null null -37.5px)
+							right: inherit

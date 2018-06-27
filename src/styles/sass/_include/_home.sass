@@ -1,0 +1,319 @@
+.home-brand
+	padding: 20px 0
+	.brand-slide
+		padding: 0px 10px
+		.slick-prev, .slick-next
+			+pos(abs, calc(50% - 10px) null null null)
+			+transform(translateY(-50%))
+			+fs(0)
+			color: darken($white,60%)
+			z-index: 5
+			&:before
+				content: ''
+				font-family: 'fontawesome'
+				+fs(32rem)
+			&:hover
+				color: $red
+		.slick-prev
+			left: 0
+			&:before
+				content: '\f104'
+		.slick-next
+			right: 0
+			&:before
+				content: '\f105'
+		.item
+			padding: 0px 10px
+	.brand-list
+		.brand
+			display: block
+			margin-bottom: 20px
+.home-video-banner
+	padding: 20px 0
+	.video
+		figure 
+			.videoimg
+				display: block
+				+pos(rel,null)
+				&:before
+					content: ''
+					+pos(abs, 0 null 0 0)
+					right: 0
+					background: linear-gradient(color-rgba($black,0.1),color-rgba($black,0.8))
+					z-index: 5
+				&:after
+					content: ''
+					+pos(abs, 0 null 0 0)
+					right: 0
+					background: url(../img/play.png) center center no-repeat
+					z-index: 6
+				> img 
+					width: 100%
+					height: 185px
+					object-fit: cover
+					+media-breakpoint-down(lg)
+						height: 125px
+					+media-breakpoint-down(md)
+						height: 200px
+				.logo
+					+pos(abs, null null 10px 15px)
+					z-index: 7
+					img 
+						height: 15px
+						filter: grayscale(100%) brightness(300%)
+.home-banner-sale
+	.sale-img
+		display: block
+		img 
+			width: 100%
+			height: 185px
+			object-fit: cover
+			+media-breakpoint-down(lg)
+				height: 125px
+			+media-breakpoint-down(md)
+				height: 200px
+.home-title
+	text-align: center
+	+fs(30rem)
+	font-weight: 200
+	text-transform: uppercase
+	margin-bottom: 30px
+	+media-breakpoint-down(sm)
+		+fs(24rem)
+.home-product
+	background: darken($white,2%)
+	padding: 40px 0
+	&:nth-child(2)
+		background: $white
+.home-product-slide
+	margin: 0px -10px
+	.slick-prev, .slick-next
+		+pos(abs, 50% null null null)
+		+transform(translateY(-50%))
+		+fs(0)
+		width: 36px
+		height: 36px
+		line-height: 36px
+		text-align: center
+		+bor-rad(50px)
+		background: darken($white,10%)
+		z-index: 5
+		&.slick-disabled
+			opacity: 0
+		&:before
+			content: ''
+			font-family: 'fontawesome'
+			+fs(18rem)
+	.slick-prev
+		left: 0
+		&:before
+			content: '\f104'
+	.slick-next
+		right: 0
+		&:before
+			content: '\f105'
+	.item
+		padding: 0px 10px
+.home-system
+	padding: 40px 0
+	.system-filter
+		padding: 10px 30px
+		background: darken($white,3%)
+		+flexbox
+		flex-wrap: wrap
+		margin-bottom: 10px
+		+media-breakpoint-down(sm)
+			padding: 15px
+		label 
+			width: 120px
+			+flexbox
+			align-items: center
+			align-content: center
+			+media-breakpoint-down(sm)
+				width: 100px
+		select 
+			padding: 10px 20px
+			+bor-rad(5px)
+			border: 1px solid darken($white,10%)
+			background: $white
+			color: $main
+			width: calc(100% - 120px)
+			+media-breakpoint-down(sm)
+				width: calc(100% - 100px)
+	.system-map
+		img 
+			width: 100%
+			height: 530px
+			object-fit: cover
+			+media-breakpoint-down(lg)
+				height: 470px
+			+media-breakpoint-down(md)
+				height: 370px
+			+media-breakpoint-down(xs)
+				height: 300px
+		iframe
+			+media-breakpoint-down(lg)
+				height: 470px
+			+media-breakpoint-down(md)
+				height: 370px
+.home-news
+	padding: 40px 0
+	.home-news-slide
+		margin-bottom: 20px
+		.slick-prev,.slick-next
+			+pos(abs, 50% null null null)
+			+transform(translateY(-50%))
+			+fs(0)
+			z-index: 5
+			width: 40px
+			height: 40px
+			line-height: 40px
+			text-align: center
+			+bor-rad(50px)
+			background: $white
+			color: $main
+			&:before
+				content: ''
+				+fs(18rem)
+			&:hover
+				color: $white
+				background: $blue
+		.slick-prev
+			left: 10px
+			&:before
+				content: '\f104'
+		.slick-next
+			right: 10px
+			&:before
+				content: '\f105'
+		.item
+		.news-col
+			figure
+				+pos(rel,null)
+				.news-img
+					display: block
+					img
+						width: 100%
+				figcaption
+					+pos(abs, null 15px 15px 15px)
+					padding: 10px
+					background: color-rgba($black,0.8)
+					time
+						display: block
+						+fs(11rem)
+						color: $white
+						opacity: 0.7
+						margin-bottom: 5px
+					.news-name
+						a
+							display: block
+							color: $white
+							+fs(18rem)
+	.news-list
+		.news-col
+			figure
+				.news-img
+					display: block
+					img
+						width: 100%
+				figcaption
+					background: darken($white,5%)
+					.news-name
+						a
+							display: block
+							padding: 8px 15px
+							color: $main
+							+fs(13rem)
+							white-space: nowrap
+							text-overflow: ellipsis
+							overflow: hidden
+				
+
+.home-feature
+	background: url(../img/fbg.jpg) center center repeat
+	padding: 40px
+	margin-bottom: -70px
+	+pos(rel,null)
+	z-index: 3
+	+media-breakpoint-down(lg)
+		padding: 15px 20px
+	.feature-col
+		figure 
+			+flexbox
+			.icon
+				width: 60px
+				height: 60px
+				+bor-rad(100px)
+				border: 1px solid $white
+				+flexbox
+				justify-content: center
+				align-items: center
+				+media-breakpoint-down(md)
+					width: 50px
+					height: 50px
+				.fa 
+					+fs(26rem)
+					color: $white
+					line-height: 1
+			figcaption
+				width: calc(100% - 60px)
+				color: $white
+				padding-left: 15px
+				.title
+					+fs(17rem)
+					font-weight: 700
+					+media-breakpoint-down(md)
+						+fs(15rem)
+				.des
+					+fs(13rem)
+					opacity: 0.8
+					+media-breakpoint-down(md)
+						+fs(12rem)
+.home-video
+	padding: 40px 0
+	.row
+		margin: 0px -10px
+	.col-12
+		padding: 0px 10px
+.video-list
+	.btn-wrap
+		margin-top: 10px !important
+	.video-col
+		margin-bottom: 20px
+		figure
+			+pos(rel,null)
+			.video-img
+				display: block
+				+pos(rel,null)
+				&:before
+					content: '\f16a'
+					+pos(abs, 0 null 0 0)
+					right: 0
+					background: color-rgba($black,0.3)
+					+fs(32rem)
+					+flexbox
+					justify-content: center
+					align-items: center
+					color: $white
+				img
+					width: 100%
+			figcaption
+				background: darken($white,5%)
+				.video-name
+					a
+						display: block
+						padding: 8px 15px
+						color: $main
+						+fs(13rem)
+		&.big
+			figure
+				.video-img
+					&:before
+						+fs(60rem)
+				figcaption
+					.video-name
+						+pos(abs, null 20px 20px 20px)
+						a
+							color: $white
+							font-weight: 500
+							+fs(20rem)
